@@ -1,1 +1,2 @@
-# continuous_integration_memes
+# ci_memes
+collection of continuous integration memes
