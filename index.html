@@ -7,20 +7,32 @@
       }
       img.sl-meme {
         display:block;
-        height: 80%;
-        margin: 0 auto;
+	height: 100%;
+        margin: auto;
       }
       a.caption {
         text-align: center;
         font-size: 60px;
         text-transform: uppercase;
         font-weight: bold;
-        display: block;
+	display: block;
+	padding-top: 200px;
+	height: 100%;
       }
+      div.w50 {
+        width: 49%;
+	height: 100%;
+	float: left;
+      }
+      div
     </style>
   </head>
   <body>
-    <img class='sl-meme' src='./assets/images/see_ci_in_action.gif'/>
-    <a class='caption'>When you first see Solano CI in action</a>
+    <div class="left w50">
+      <img class='sl-meme' src='./assets/images/laser_pointer_cat.gif'/>
+    </div>
+    <div class="right w50">  
+      <a class='caption'>I can has<br />passing<br />Jenkins<br />buildz???</a>
+    </div>
   </body>
 </html>
