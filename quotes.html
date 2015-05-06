@@ -18,10 +18,11 @@
   <script type="text/javascript">
     $(function() {
       $.getJSON( "quotes.json", function( data ) {
-        index = Math.floor(Math.random() * data.length);
-        newQuote = data[index];
+        quoteList = data["quote"];
+        index = Math.floor(Math.random() * quoteList.length);
+        newQuote = quoteList[index];
         $('.quote span').text(newQuote);
-        $('.quote').textfill({ maxFontPixels: 36 });
+        $('.quote').textfill({ maxFontPixels: 1000 });
       });
     });
 
