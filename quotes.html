@@ -1,9 +1,18 @@
 <html>
   <head>
     <title>SOLANO QUOTES</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
   <body>
 
+  <script type="text/javascript">
+    $(function() {
+      $.getJSON( "quotes.json", function( data ) {
+        index = Math.floor(Math.random() * data.length);
+        newQuote = data[index];
+        $('.quote').text(newQuote);
+      });
+    });
+  </script>
   </body>
 </html>
